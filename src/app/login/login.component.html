@@ -1,0 +1,27 @@
+<section>
+    <div class="container">
+        <div class="form-container">
+            <div class="page-title">
+                <h2>Connexion</h2>
+            </div>
+<form>
+    <div class="row-field">
+        <input type="text" [(ngModel)]="Mail" placeholder="Entrez votre Mail"
+        [ngModelOptions]="{standalone: true}">
+    </div>
+
+    <div class="row-field">
+        <input type="password" [(ngModel)]="Password" placeholder="Entrez votre mot de passe"
+        [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="row-field row-buttons">
+        <button type="submit" id="login">Connexion</button>
+    </div>
+
+    <div>
+        <p id="msg-alert" class="msg-alert"></p>
+    </div>
+</form>
+</div>
+</div>
+</section>

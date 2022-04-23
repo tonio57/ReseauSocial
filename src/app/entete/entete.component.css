@@ -1,0 +1,44 @@
+/* Header */
+.row-header {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    border-bottom: 1px solid rgb(193, 30, 30);
+}
+.row-header .col-header ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 9px;
+    transition: .25s all;
+    border: 1px solid #ededed;
+}
+.row-header .col-header ul li:hover {
+    border: 1px solid #938f8f;
+}
+.row-header .col-header ul li a {
+    text-decoration: none;
+    color: #5a086e;
+    padding: 8px;
+    display: block;
+}
+
+/* Add new buttons */
+.btn-new {
+    padding: 15px 0;
+    text-align: right;
+}
+.btn-new button {
+    padding: 7px 30px;
+    background-color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s all;
+}
+.btn-new button:hover {
+    background-color: #008922;
+    color: white;
+}
