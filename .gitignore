@@ -102,6 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
 # Miscellaneous
 /.angular/cache
 .sass-cache/
@@ -110,3 +111,8 @@ dist
 /libpeerconnection.log
 testem.log
 /typings
+
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
