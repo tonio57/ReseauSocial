@@ -39,8 +39,8 @@ constructor(private http: HttpClient, private userConnected:InscriptionService, 
     }
   }
 
-  disconnect(){
-    localStorage.clear();
-    this.user = null;
-  }
+  // disconnect(){
+  //   localStorage.clear();
+  //   this.user = null;
+  // }
 }

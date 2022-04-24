@@ -23,20 +23,20 @@ addUser(user:object){
   console.log(body);
   return this.http.post(this.urlBase, body, this.httpOptions);
 }
-  login(user:object){
-    const body = JSON.stringify(user);
-    console.log(body);
-    return this.http.post(this.urlBase + "/connect", body, this.httpOptions);
-  }
+//   login(user:object){
+//     const body = JSON.stringify(user);
+//     console.log(body);
+//     return this.http.post(this.urlBase + "/connect", body, this.httpOptions);
+//   }
 
-  getUser(id:number){
-    const headers = {
-      headers: new HttpHeaders({
-        'Authorisation': ' '+ this.userConnected.user?.token,
-      })
-    }
-    return this.http.get<userInterface>(this.urlBase + `/${id}`, headers)
-  }
+//   getUser(id:number){
+//     const headers = {
+//       headers: new HttpHeaders({
+//         'Authorisation': ' '+ this.userConnected.user?.token,
+//       })
+//     }
+//     return this.http.get<userInterface>(this.urlBase + `/${id}`, headers)
+//   }
 
 
 }

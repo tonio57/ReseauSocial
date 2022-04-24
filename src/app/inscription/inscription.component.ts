@@ -18,13 +18,7 @@ Avatar: string=""
 
   constructor(private inscriptionService:InscriptionService, private router:Router) {
   }
-  addUser(user: NgForm){
-    this.inscriptionService.addUser(user.value)
-      .subscribe(data => {
-        console.log(data);
-        this.router.navigate(["login"]);
-      });
-  }
+ 
   ngOnInit(): void {
   }
 }
