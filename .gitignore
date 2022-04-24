@@ -104,7 +104,7 @@ dist
 .tern-port
 
 # Miscellaneous
-/.angular/cache
+.angular/cache
 .sass-cache/
 /connect.lock
 /coverage
