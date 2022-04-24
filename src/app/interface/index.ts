@@ -3,13 +3,6 @@ export interface UserLoginInterface {
     password: string
 }
 
-export interface UserRegister {
-    pseudo: string
-    email: string
-    password: string
-    avatar: string
-}
-
 export interface ResponseServer {
     id: number
     niveau: number

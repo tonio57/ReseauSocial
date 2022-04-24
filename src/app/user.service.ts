@@ -17,6 +17,7 @@ export class UserService {
   
 };
 userList?:Array<userInterface>;
+user: { id:number, token: string } |null =JSON.parse(localStorage.getItem("user")!);
 constructor(private http: HttpClient, private userConnected:InscriptionService, private router:Router) { }
 
 
@@ -25,12 +26,12 @@ constructor(private http: HttpClient, private userConnected:InscriptionService, 
     if(this.user) {
       const headers = {
         headers: new HttpHeaders({
-          'Authorization': 'Bearer ' + this.user.token,
+          'Authorisation': '  ' + this.user.token,
         })
       }
       return this.http.get<userInterface>(this.urlBase + `/${this.user.id}`, headers)
         .subscribe(user => {
-          this.userConnected = user;
+          this.userConnected.user= user;
         });
     }else{
       this.router.navigate(["/login"]);

@@ -32,7 +32,7 @@ addUser(user:object){
   getUser(id:number){
     const headers = {
       headers: new HttpHeaders({
-        'Authorisation': 'Bearer '+ this.userConnected.user?.token,
+        'Authorisation': ' '+ this.userConnected.user?.token,
       })
     }
     return this.http.get<userInterface>(this.urlBase + `/${id}`, headers)
