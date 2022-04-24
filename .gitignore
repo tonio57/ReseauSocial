@@ -105,3 +105,8 @@ dist
 # Miscellaneous
 /.angular/cache
 .sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
