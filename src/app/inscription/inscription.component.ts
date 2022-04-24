@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router} from "@angular/router";  
+import {NgForm} from '@angular/forms';
+import { InscriptionService } from '../inscription.service';
 
 @Component({
   selector: 'app-inscription',
@@ -13,9 +16,15 @@ Password: string=""
 ConfirmPassword: string=""
 Avatar: string=""
 
-  constructor() { }
-
+  constructor(private inscriptionService:InscriptionService, private router:Router) {
+  }
+  addUser(user: NgForm){
+    this.inscriptionService.addUser(user.value)
+      .subscribe(data => {
+        console.log(data);
+        this.router.navigate(["/login"]);
+      });
+  }
   ngOnInit(): void {
   }
-
 }
